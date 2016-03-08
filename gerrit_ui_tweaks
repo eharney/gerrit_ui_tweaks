@@ -1,0 +1,70 @@
+/* Openstack gerrit UI tweaks
+ * Eric Harney
+ * Please note that I don't know anything about CSS.
+ * This is mostly Cinder-oriented. */
+
+@namespace url(http://www.w3.org/1999/xhtml);
+
+
+@-moz-document regexp("^http(s)?://review.openstack.org/#/c/.*") {
+  /* Make it possible to read the list of reviewers by graying out CI systems. */
+  /* This gets tricky because not all have the same permissions, and not all post email addresses. */
+
+  /* Some CI systems. */
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="Votable: Verified, Code-Review"] {
+    color: lightgray;
+  }
+
+  /* Other CI systems. */
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="openstack-ci@blockbridge.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="openstack-dev@cloudbyte.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="openstack-ci@cohodata.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="datera-openstack-ci@datera.io"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="emc.scaleio.ci@emc.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="emc.vmax.ci@emc.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="emc.vnx.ci@emc.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="emc.xio.ci@emc.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="lsoft-eternusci@ml.css.fujitsu.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="lsoft-openstackci@ml.css.fujitsu.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="OpenStackDevelopment@hds.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="OpenStackCI2@hds.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="openstack-ci-team@hgst.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="hp.cinder.ci@groups.ext.hpe.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="xp.cinder.ci@groups.ext.hpe.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="flashci@cn.ibm.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="edlin@us.ibm.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="rsandeep@in.ibm.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="ibmswci@cn.ibm.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="itri_cinder@itri.org.tw"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="johnny800503.work@gmail.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="cinder_ci@mellanox.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="microsoft_cinder_ci@microsoft.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="xdl-openstack-jenkins@netapp.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="openstackci@nexenta.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="nexentaedge@gmail.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="ng-openstack-ci@netapp.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="prophetstor.ci@prophetstor.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="cinder.ci@purestorage.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="openstack-ci-external@quobyte.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="openstack-ci@scality.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="openstack.ci@solidfire.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="openstack.ci@tegile.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="openstack-ci@tintri.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="vedams_hp_ci@vedams.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="vedams_lenovo_ci@vedams.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="vedams_scst_ci@vedams.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="vmem-openstack-ci@vmem.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="virtuozzo6-ci@virtuozzo.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="vzstorage-ci@virtuozzo.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="openstack-ci@x-io.com"]
+  {
+    color: lightgray;
+  }
+
+
+  /* Core reviewers (only works on open patchsets) */
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="Votable: Code-Review, Workflow"] {
+    color: green;
+  }
+}
+

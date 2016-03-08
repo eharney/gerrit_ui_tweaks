@@ -1,0 +1,4 @@
+OpenStack gerrit UI tweaks.
+
+This tries to improve the readability of review pages by greying out CI systems and highlighting core reviewers.  It may do other things in the future.
+
