@@ -4,7 +4,9 @@
  * This is mostly Cinder-oriented. */
 
 /* v1 - initial version
- * v2 - add additional CI emails */
+ * v2 - add additional CI emails
+ * v3 - remove tag-based checking for CI as gerrit tags aren't accurate
+ */
 
 @namespace url(http://www.w3.org/1999/xhtml);
 
@@ -12,11 +14,6 @@
 @-moz-document regexp("^http(s)?://review.openstack.org/#/c/.*") {
   /* Make it possible to read the list of reviewers by graying out CI systems. */
   /* This gets tricky because not all have the same permissions, and not all post email addresses. */
-
-  /* Some CI systems. */
-  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="Votable: Verified, Code-Review"] {
-    color: lightgray;
-  }
 
   /* Other CI systems. */
   .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="openstack-ci@blockbridge.com"],
