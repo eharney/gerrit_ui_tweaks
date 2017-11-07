@@ -10,6 +10,7 @@
  * v5 - more emails
  * v6 - more emails
  * v7 - more emails
+ * v8 - more emails
  */
 
 @namespace url(http://www.w3.org/1999/xhtml);
@@ -20,6 +21,7 @@
   /* This gets tricky because not all have the same permissions, and not all post email addresses. */
 
   /* Other CI systems. */
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="ddn_openstack@163.com"],
   .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="openstack-ci@blockbridge.com"],
   .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="Brocade-Openstack-CI@Brocade.com"],
   .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="cinder-smb3-ci@cloudbasesolutions.com"],
@@ -59,6 +61,7 @@
   .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="ibmswci@cn.ibm.com"],
   .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="IBM_CI@il.ibm.com"],
   .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="ibmxivci@il.ibm.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="imanilac@in.ibm.com"],
   .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="kvmpower@linux.vnet.ibm.com"],
   .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="jenkins@infinidat.com"],
   .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="inspur.ci@inspur.com"],
@@ -74,6 +77,7 @@
   .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="openstackci@nexenta.com"],
   .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="nexentaedge@gmail.com"],
   .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="ng-openstack-ci@netapp.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="ng-openstack-solidfire-ci@netapp.com"],
   .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="openstack-ci@nimblestorage.com"],
   .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="prophetstor.ci@prophetstor.com"],
   .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="cinder.ci@purestorage.com"],
@@ -86,6 +90,7 @@
   .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="cinder@synology.com"],
   .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="openstack.ci@tegile.com"],
   .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="openstack-ci@tintri.com"],
+  .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="cinder+lenovo@tristero.net"],
   .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="DL-VTAS-ENG-SDIO-Access-Opensource@veritas.com"],
   .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="DL-VTAS-ENG-SDIO-HyperScale-Opensource@veritas.com"],
   .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user[title*="vedams_hp_ci@vedams.com"],
